@@ -2,37 +2,93 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button {
+  margin: 0;
+  height: 35px;
+  width: 40px;
+  background-color: gray;
   color: white;
+  border: 5px solid;
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  margin: 0px;
+  height: 35px;
+  width: 40px;
+  background-color: darkgray;
+  color: white;
+  border: 5px solid;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button:active {
+  margin: 0px;
+  height: 35px;
+  width: 40px;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border: 5px solid;
+  border-radius: 8px;
+}
+
+.searchBar {
+  width: 350px;
+  height: 40px;
+  border: 5px solid;
+  border-radius: 8px;
+  font-size: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #21aeca;
+}
+
+.accordion-title:hover {
+  background-color: #3ab4cc;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  background-color: #39b9d2;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .accordion {
+    width: 90%;
   }
+}
+
+
+body {
+  background: linear-gradient(90deg, rgba(38,35,161,1) 30%, rgba(9,9,121,1) 40%, rgba(62,56,193,1) 48%, rgba(79,71,217,1) 55%, rgba(19,5,255,1) 64%);
 }
